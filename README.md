@@ -9,7 +9,7 @@
 java MasterServer [your desired port]
 ```
 	
-After the MasterServer/Navigator is successfully initialized, 3 Subserver will open and ready to connected to. If any of them die they will be automatically revived after 4 seconds.
+After the MasterServer/Navigator is successfully initialized, 3 Subservers will open and ready to accept connection. If any of them die they will be automatically revived after 4 seconds.
 	
 * To start the Client - Navigate to ``[pulled folder]/src``, run the following command:
 ```
