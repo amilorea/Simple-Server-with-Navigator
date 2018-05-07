@@ -1,0 +1,1 @@
+cmd /C start java -jar ../Server.jar %1
