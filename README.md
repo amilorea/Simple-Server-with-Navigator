@@ -18,5 +18,5 @@ java Client [MasterServer's port]
 	
 # List of Client's command
 * ``gettime@@@`` : This command get the subserver living time from when it is initialized.
-* ``calculate@@@__param string__`` : This command return the character with highest occurence frequency in __param string__.
+* ``calculate@@@[param string]`` : This command return the character with highest occurence frequency in __param string__.
 * ``stop@@@`` : This command stop the subserver currently connect to the client, the subserver won't accept further connection, but still working for all currently connected client and only exit when all remaining clients is disconnected. MasterServer won't return a stopped Server to a Client's request.
