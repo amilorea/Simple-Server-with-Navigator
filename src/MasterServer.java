@@ -189,6 +189,12 @@ class Navigator extends Thread {
 						n.start();
 						
 						type = TYPE_SUBSERVER;
+					} else if(sm.equals("stop")) {
+						System.out.println(sm + " | " + cm);
+						portSubserver = Integer.parseInt(cm);
+						mServer.removeSubserver(portSubserver);
+						
+						type = TYPE_SUBSERVER;
 					} else if(sm.equals("getport")) {
 						System.out.println(sm + " | " + cm);
 						

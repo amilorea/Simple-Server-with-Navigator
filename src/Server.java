@@ -79,6 +79,13 @@ public class Server implements Runnable {
 	void stopServer() {
 		serverStatus = false;
 		try {
+			dos.writeUTF("stop@@@" + portSubserver);
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			error("Error stopped MasterServer");
+			e1.printStackTrace();
+		}
+		try {
 			server.close();
 			println("Sucessfully close Subserver on port " + portSubserver);
 		} catch (IOException e) {
